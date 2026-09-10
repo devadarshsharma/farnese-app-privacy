@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Pietra Phone App | Farnese Australia</title>
+<meta name="description" content="Privacy policy for the Pietra Phone App, the stone slab scanning app operated by Farnese Australia Pty Ltd.">
+<style>
+    :root {
+        --ink: #16181a;
+        --ink-soft: #40454a;
+        --ink-faint: #565c62;      /* ~7:1 on the pale wash; muted without dropping below AA */
+        --rule: #e2e5e8;
+        --rule-soft: #eef0f2;
+        --paper: #ffffff;
+        --wash: #f7f8f9;
+        --accent: #c81a12;         /* ~5.2:1 on white for link text */
+        --mark: #e1251b;           /* the logo's own red, used only as artwork */
+        --measure: 44rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Masthead ─────────────────────────────────────────────────────── */
+
+    header {
+        border-bottom: 1px solid var(--rule);
+        background: var(--wash);
+        padding: 2.75rem 0 2.25rem;
+    }
+
+    .brand { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.75rem; }
+    .brand svg { width: 40px; height: 40px; flex: none; }
+    .brand-name {
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.6rem; letter-spacing: -0.015em; }
+
+    .standfirst { margin: 0; color: var(--ink-soft); font-size: 1.05rem; }
+
+    .dateline {
+        margin: 1.5rem 0 0;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--rule);
+        font-size: 0.875rem;
+        color: var(--ink-faint);
+    }
+    .dateline strong { color: var(--ink-soft); font-weight: 600; }
+
+    /* A long identifier must be free to break rather than force the page sideways. */
+    code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.9em;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    /* ── Body ─────────────────────────────────────────────────────────── */
+
+    main { padding: 3rem 0 1rem; }
+
+    h2 {
+        font-size: 1.2rem;
+        line-height: 1.35;
+        margin: 3rem 0 0.9rem;
+        padding-top: 1.75rem;
+        border-top: 1px solid var(--rule-soft);
+        letter-spacing: -0.01em;
+    }
+    main > .wrap > h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+
+    h3 { font-size: 1rem; margin: 1.9rem 0 0.5rem; }
+
+    p { margin: 0 0 1.1rem; }
+
+    ul { margin: 0 0 1.1rem; padding-left: 1.3rem; }
+    li { margin-bottom: 0.55rem; }
+    li::marker { color: var(--ink-faint); }
+
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    strong { font-weight: 650; }
+
+    /* A statement that carries more weight than the prose around it. */
+    .note {
+        margin: 1.6rem 0;
+        padding: 1.1rem 1.3rem;
+        background: var(--wash);
+        border-left: 3px solid var(--mark);
+        border-radius: 0 4px 4px 0;
+    }
+    .note p:last-child { margin-bottom: 0; }
+
+    /* Facts that are Farnese's to supply. Loud on purpose: this page must not be published
+       with any of these still in it. */
+    .todo {
+        background: #fff2c2;
+        border-bottom: 2px solid var(--mark);
+        color: #7a4a00;
+        font-weight: 650;
+        padding: 0 0.25em;
+    }
+
+    /* ── Table ────────────────────────────────────────────────────────── */
+
+    /* Focusable so the scroll region can be reached and panned from the keyboard, and so a
+       screen reader announces it as a region rather than silently clipping the table. */
+    .table-scroll {
+        overflow-x: auto;
+        margin: 0 0 1.4rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    .table-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    table { border-collapse: collapse; width: 100%; min-width: 32rem; font-size: 0.925rem; }
+
+    caption {
+        text-align: left;
+        font-size: 0.8rem;
+        color: var(--ink-faint);
+        padding-bottom: 0.7rem;
+    }
+
+    th, td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.7rem 1rem 0.7rem 0;
+        border-bottom: 1px solid var(--rule-soft);
+    }
+    th {
+        font-weight: 650;
+        font-size: 0.78rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+        border-bottom-color: var(--rule);
+    }
+    td:last-child, th:last-child { padding-right: 0; }
+
+    /* ── Contact ──────────────────────────────────────────────────────── */
+
+    .contact {
+        margin: 2.5rem 0 0;
+        padding: 1.5rem;
+        border: 1px solid var(--rule);
+        border-radius: 6px;
+    }
+    .contact p:last-child { margin-bottom: 0; }
+    .contact-name { font-weight: 650; }
+
+    footer {
+        margin-top: 3.5rem;
+        border-top: 1px solid var(--rule);
+        background: var(--wash);
+        padding: 1.75rem 0;
+        font-size: 0.85rem;
+        color: var(--ink-faint);
+    }
+    footer p { margin: 0; }
+
+    @media (max-width: 34rem) {
+        body { font-size: 16px; }
+        h1 { font-size: 1.6rem; }
+        header { padding: 2rem 0 1.75rem; }
+        main { padding: 2.25rem 0 1rem; }
+        h2 { margin-top: 2.4rem; }
+    }
+
+    @media print {
+        header, footer { background: none; }
+        body { font-size: 11pt; }
+        a { color: inherit; }
+        h2 { page-break-after: avoid; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <div class="brand">
+            <!-- The Farnese mark: the red ring segment and the monogram inside it. -->
+            <svg viewBox="272.15 313.69 53.14 53.14" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Farnese">
+                <path fill="#E1251B" d="M317,321.69 L311.56,322.72 A21.741,21.741 0 0 0 279.07,349.64 L276.93,354.61 A26.067,26.067 0 0 1 317,321.69 Z"/>
+                <path fill="#111111" d="M318.67,323.51 L290.36,328.25 L278.23,356.4 A26.067,26.067 0 0 0 287.46,363.75 L298.28,338.63 L319.78,335.03 A21.741,21.741 0 0 1 295.72,361.76 L302.91,345.06 L314.04,343.2 L313.45,338.6 L300,340.92 L289.75,364.71 A26.067,26.067 0 0 0 322.72,330.18 L295.39,334.75 L285.56,357.56 A21.741,21.741 0 0 1 283.49,355.79 L293.53,332.51 L321.59,327.81 A26.067,26.067 0 0 0 318.67,323.51 Z"/>
+            </svg>
+            <span class="brand-name">Farnese</span>
+        </div>
+
+        <h1>Privacy Policy — Pietra Phone App</h1>
+        <p class="standfirst">How the Pietra Phone App handles information, what it sends to our servers, and what it deliberately does not do.</p>
+
+        <p class="dateline">
+            <strong>Effective:</strong> 10 September 2026 &nbsp;·&nbsp;
+            <strong>Applies to:</strong> Pietra Phone App for iOS and Android (<code>au.com.farnese.pietraphone</code>) &nbsp;·&nbsp;
+            <strong>Operated by:</strong> Farnese Australia Pty Ltd
+        </p>
+    </div>
+</header>
+
+<main>
+    <div class="wrap">
+
+        <h2>1. About this app and this policy</h2>
+
+        <p>The Pietra Phone App is a working tool for stone businesses, operated by Farnese Australia Pty Ltd. An operator photographs a stone slab that carries four visible targets, marks those targets on the photograph, enters the real distances between them, and uploads the photograph together with those measurements to their organisation's storage area. The measurements are later used by our desktop software to correct the photograph's perspective; the phone app is the capture half of that pair.</p>
+
+        <p>The app is used by staff of businesses that hold an account with us. It is not a consumer app, and accounts are issued by Farnese or by your organisation's administrator rather than created by users inside the app.</p>
+
+        <p>This policy describes what the application itself does. It is written against the actual behaviour of the software rather than the range of things an app of this kind might do.</p>
+
+        <div class="note">
+            <p><strong>The app contains no advertising, no analytics and no crash reporting, and nothing you do in it is tracked across other apps or websites.</strong> It does not collect your location, contacts, calendar, microphone, health data or advertising identifier, it does not build a profile of you, and it does not share information with data brokers. Like any internet service, our servers keep operational and security logs — those are described in section 4 and are not used for advertising or profiling.</p>
+        </div>
+
+        <h2>2. Information the app handles</h2>
+
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Information the app handles">
+            <table>
+                <caption>Every category of information the app records, why it exists, and where it ends up. Scroll sideways on a narrow screen.</caption>
+                <thead>
+                    <tr><th scope="col">Information</th><th scope="col">Why</th><th scope="col">Where it goes</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Photographs of stone slabs</strong></td>
+                        <td>The photograph is the work product. It is uploaded so it can be processed on a desktop computer.</td>
+                        <td>Stored privately on the device; uploaded to your organisation's storage area when you choose to upload.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Target positions and measurements</strong> — four points marked on the photograph and the distances between them</td>
+                        <td>They describe the geometry of the slab and are what allow the photograph's perspective to be corrected.</td>
+                        <td>Saved beside the photograph on the device and uploaded with it.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Slab details</strong> — material, thickness, slab number, price, status, usable size. All optional.</td>
+                        <td>Business information recorded against the photograph.</td>
+                        <td>Saved beside the photograph and uploaded with it.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Details of the file itself</strong> — a filename containing the date and time the photograph was taken, and the image's pixel dimensions</td>
+                        <td>To name each photograph uniquely and to keep its measurements aligned with the image they were marked on.</td>
+                        <td>Saved with the photograph and uploaded with it.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A printable QR image</strong>, only when the app generated the slab number itself</td>
+                        <td>So the number can be printed and stuck on the slab. A number read from an existing sticker produces no such image.</td>
+                        <td>Uploaded alongside the photograph.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A fixed label naming the app</strong> — the constant text <code>PietraPhoneApp</code></td>
+                        <td>So the server knows an upload came from the phone app rather than elsewhere.</td>
+                        <td>Sent with each upload. <strong>This is not a device identifier</strong> — it is the same text for every phone and every user.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Slab barcode or QR code</strong> read from a sticker</td>
+                        <td>To fill in the slab number without typing it.</td>
+                        <td>Held only long enough to read the code, then placed in the slab number field. The image taken to read it is never saved.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Username and password</strong></td>
+                        <td>To sign in to your organisation's storage area.</td>
+                        <td>Sent to our server to authenticate you. <strong>Your password is never stored on the device.</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sign-in token</strong> issued by our server</td>
+                        <td>So you are not asked to sign in again every time the app opens.</td>
+                        <td>Held in the device's secure credential store — the Android Keystore or the iOS Keychain. See section 5 for how long it lasts.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Your username, remembered</strong></td>
+                        <td>So the sign-in screen can offer it back to you.</td>
+                        <td>Stored on the device only. Never uploaded on its own.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Your account's storage usage</strong> — organisation name, storage limit and amount used</td>
+                        <td>Returned by our server when you sign in, so the app can report when storage is full.</td>
+                        <td>Held in memory for the session only. Not written to the device.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>People appearing in photographs</h3>
+
+        <p>The app photographs stone slabs, but a slab is usually photographed in a yard, warehouse or workshop. A photograph may therefore incidentally include colleagues, members of the public, vehicles or registration plates that happen to be in frame. Those photographs are uploaded and retained in the same way as any other. If you photograph a slab in a place where people are present, take the same care you would with any workplace photography.</p>
+
+        <h2>3. Device permissions</h2>
+
+        <ul>
+            <li><strong>Camera</strong> — to photograph slabs and to read barcodes and QR codes from slab stickers. This is the only permission the app asks you for, and the app cannot be used for its purpose without it.</li>
+            <li><strong>Internet and network state</strong> (Android) — to sign in and to upload and browse your photographs. Granted automatically by the operating system; you are not prompted.</li>
+        </ul>
+
+        <p>The app does <strong>not</strong> request access to your photo library, location, microphone, contacts, calendar, files outside its own storage, or notifications.</p>
+
+        <h2>4. Where information is stored, and who can reach it</h2>
+
+        <h3>On your device</h3>
+
+        <p>Photographs and their measurements are written to the app's own private storage area, which other apps on the device cannot read. They stay there until you delete them in the app or uninstall the app.</p>
+
+        <p><strong>On Android</strong>, this data is deliberately excluded from Google's automatic backup and from phone-to-phone transfer, so your organisation's slab photographs are not copied into anyone's personal Google Drive account and do not follow a handset when it is replaced.</p>
+
+        <p><strong>On iOS</strong>, the app does not exclude its files from device backup. Photographs held on the phone may therefore be included in an iCloud or computer backup of the device, under the control of the person who owns that backup. Photographs that have not been uploaded are lost if the device is lost, so upload your work.</p>
+
+        <h3>On our servers</h3>
+
+        <p>When you upload, the photograph, its measurements and any slab details are sent over an encrypted HTTPS connection to the Farnese Customer Storage service and stored in the storage area belonging to your organisation.</p>
+
+        <p>The following can reach an uploaded photograph:</p>
+
+        <ul>
+            <li><strong>Users authorised on your organisation's account</strong>, through this app.</li>
+            <li><strong>Our desktop software</strong>, where your organisation uses it to correct and work with the photographs.</li>
+            <li><strong>Farnese staff</strong>, where access is necessary to operate, support or troubleshoot the service.</li>
+            <li><strong>Anyone holding a valid temporary link.</strong> To display thumbnails, the app fetches images using signed links that expire after fifteen minutes. While such a link is valid, whoever holds it can open the image it points to, so links of this kind should not be forwarded or pasted anywhere they might be retained.</li>
+        </ul>
+
+        <p>We do not sell information, and we do not disclose it to anyone else except where we are required to by law.</p>
+
+        <h3>Hosting and overseas disclosure</h3>
+
+        <p>Our servers and the file storage behind them are operated for us by <strong>DigitalOcean</strong>, a hosting provider acting on our instructions. <strong>Your photographs and measurements are stored in DigitalOcean's Sydney region, in Australia.</strong> DigitalOcean is a company headquartered in the United States, and its personnel may access systems from outside Australia in the course of operating and supporting that infrastructure.</p>
+
+        <h3>Operational and security logs</h3>
+
+        <p>Our servers keep ordinary technical logs of requests made to the service, which may include your IP address, the time of the request and what was requested. These exist to keep the service running securely and to investigate faults and abuse. They are not used for advertising or profiling, and they are kept for up to 12 months before being discarded.</p>
+
+        <p>The app also writes brief diagnostic messages to your phone's own system log while the barcode scanner is running, which can include a scanned slab number. These stay on the device, are not written to a file by the app, and are never transmitted to us.</p>
+
+        <h2>5. How long information is kept</h2>
+
+        <ul>
+            <li><strong>Photographs on the device</strong> — until you delete them in the app, or uninstall the app. Nothing expires on its own.</li>
+            <li><strong>Photographs on the server</strong> — retained while the account is active, until deleted from within the app or by us. After an account is closed, information held under it is retained for up to 12 months and then deleted.</li>
+            <li><strong>Backups of the service</strong> — where backups are held, a deleted file may persist in them for up to 12 months before they are overwritten in the ordinary cycle.</li>
+            <li><strong>Operational and security logs</strong> — up to 12 months, then discarded.</li>
+            <li><strong>Your sign-in token</strong> — it stops being accepted by our server at its expiry time. A stored token that has expired is erased from the device when the app next examines it, which happens when the app is opened. Signing out erases it immediately.</li>
+            <li><strong>Your remembered username</strong> — until the app is uninstalled or its data cleared. On iOS, credentials held in the Keychain can survive an uninstall and reappear if the app is installed again; signing out clears them.</li>
+            <li><strong>Records we are required to keep by law</strong> — retained for as long as the relevant law requires, even after a deletion request.</li>
+        </ul>
+
+        <h2>6. Deleting your data and your account</h2>
+
+        <p>You can delete individual photographs, both on the device and on the server, from within the app at any time.</p>
+
+        <div class="note">
+            <p><strong>Deleting a photograph from the server does not delete copies elsewhere.</strong> A copy still held on a phone, or already downloaded to a desktop computer by your organisation, remains where it is and must be deleted there separately.</p>
+        </div>
+
+        <p><strong>Your own access.</strong> To have your individual account closed and the personal information held about you deleted, write to <a href="mailto:it@farnese.com.au">it@farnese.com.au</a> from the address associated with the account, or ask your organisation's administrator. We will acknowledge the request within 5 business days and action it within 30 days, or explain why we cannot. Where information must be retained beyond that — in any backup still in rotation, or in records we are required to keep — it is deleted on the schedule in section 5.</p>
+
+        <p><strong>Your organisation's records.</strong> Slab photographs and their measurements are your organisation's business records, not personal records belonging to the operator who took them. Closing one operator's account therefore does not delete the photographs that operator uploaded — those remain the organisation's, and only the organisation's authorised representative can ask for them to be deleted.</p>
+
+        <h2>7. Security</h2>
+
+        <ul>
+            <li>All communication with our servers uses encrypted HTTPS connections.</li>
+            <li>Your password is sent to authenticate you and is never written to the device.</li>
+            <li>The sign-in token is held in the platform's protected credential store — the Android Keystore or the iOS Keychain — rather than in ordinary app storage.</li>
+            <li>Photographs on the device are held in private app storage that other applications cannot read. On Android they are additionally excluded from device backup and transfer; on iOS they may be included in a device backup, as described in section 4.</li>
+        </ul>
+
+        <p>No system is perfectly secure. A phone that is unlocked, shared or compromised may expose whatever is on it, so treat a device holding un-uploaded slab photographs as you would any other work equipment.</p>
+
+        <h2>8. Your rights, and complaints</h2>
+
+        <p>Farnese Australia Pty Ltd handles personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles. You may ask us for access to the personal information we hold about you, ask us to correct it, or ask us to delete it, by writing to the address in section 11.</p>
+
+        <p><strong>If you believe we have mishandled your privacy</strong>, write to us at <a href="mailto:it@farnese.com.au">it@farnese.com.au</a> setting out what happened. We will acknowledge your complaint within 5 business days and give you a written response within 30 days. If you are not satisfied with that response, you may refer the matter to the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au">oaic.gov.au</a> or on 1300 363 992.</p>
+
+        <h2>9. Children</h2>
+
+        <p>Accounts are issued to businesses for use by their staff, and the app is a workplace tool. It is not directed at children, and we do not knowingly collect information from anyone under 16.</p>
+
+        <h2>10. Changes to this policy</h2>
+
+        <p>If we change how the app handles information, we will update this page and change the effective date at the top. Where a change is significant, we will tell account holders directly.</p>
+
+        <h2>11. Contact</h2>
+
+        <div class="contact">
+            <p class="contact-name">Farnese Australia Pty Ltd</p>
+            <p>Privacy enquiries, access and correction requests, complaints, and account deletion requests:<br>
+            <a href="mailto:it@farnese.com.au">it@farnese.com.au</a></p>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <p>© 2026 Farnese Australia Pty Ltd. Privacy policy for the Pietra Phone App.</p>
+    </div>
+</footer>
+
+</body>
+</html>
