@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Farnese Service App | Farnese Australia</title>
+<meta name="description" content="Privacy policy for the Farnese Service App, the field service app used by Farnese technicians.">
+<style>
+    :root {
+        --ink: #16181a;
+        --ink-soft: #40454a;
+        --ink-faint: #565c62;      /* ~7:1 on the pale wash; muted without dropping below AA */
+        --rule: #e2e5e8;
+        --rule-soft: #eef0f2;
+        --paper: #ffffff;
+        --wash: #f7f8f9;
+        --accent: #c81a12;         /* ~5.2:1 on white for link text */
+        --mark: #e1251b;           /* the logo's own red, used only as artwork */
+        --measure: 44rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Masthead ─────────────────────────────────────────────────────── */
+
+    header {
+        border-bottom: 1px solid var(--rule);
+        background: var(--wash);
+        padding: 2.75rem 0 2.25rem;
+    }
+
+    .brand { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.75rem; }
+    .brand svg { width: 40px; height: 40px; flex: none; }
+    .brand-name {
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.6rem; letter-spacing: -0.015em; }
+
+    .standfirst { margin: 0; color: var(--ink-soft); font-size: 1.05rem; }
+
+    .dateline {
+        margin: 1.5rem 0 0;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--rule);
+        font-size: 0.875rem;
+        color: var(--ink-faint);
+    }
+    .dateline strong { color: var(--ink-soft); font-weight: 600; }
+
+    /* A long identifier must be free to break rather than force the page sideways. */
+    code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.9em;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    /* ── Body ─────────────────────────────────────────────────────────── */
+
+    main { padding: 3rem 0 1rem; }
+
+    h2 {
+        font-size: 1.2rem;
+        line-height: 1.35;
+        margin: 3rem 0 0.9rem;
+        padding-top: 1.75rem;
+        border-top: 1px solid var(--rule-soft);
+        letter-spacing: -0.01em;
+    }
+    main > .wrap > h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+
+    h3 { font-size: 1rem; margin: 1.9rem 0 0.5rem; }
+
+    p { margin: 0 0 1.1rem; }
+
+    ul { margin: 0 0 1.1rem; padding-left: 1.3rem; }
+    li { margin-bottom: 0.55rem; }
+    li::marker { color: var(--ink-faint); }
+
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    strong { font-weight: 650; }
+
+    /* A statement that carries more weight than the prose around it. */
+    .note {
+        margin: 1.6rem 0;
+        padding: 1.1rem 1.3rem;
+        background: var(--wash);
+        border-left: 3px solid var(--mark);
+        border-radius: 0 4px 4px 0;
+    }
+    .note p:last-child { margin-bottom: 0; }
+
+    /* Facts that are Farnese's to supply. Loud on purpose: this page must not be published
+       with any of these still in it. */
+    .todo {
+        background: #fff2c2;
+        border-bottom: 2px solid var(--mark);
+        color: #7a4a00;
+        font-weight: 650;
+        padding: 0 0.25em;
+    }
+
+    /* ── Table ────────────────────────────────────────────────────────── */
+
+    /* Focusable so the scroll region can be reached and panned from the keyboard, and so a
+       screen reader announces it as a region rather than silently clipping the table. */
+    .table-scroll {
+        overflow-x: auto;
+        margin: 0 0 1.4rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    .table-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    table { border-collapse: collapse; width: 100%; min-width: 32rem; font-size: 0.925rem; }
+
+    caption {
+        text-align: left;
+        font-size: 0.8rem;
+        color: var(--ink-faint);
+        padding-bottom: 0.7rem;
+    }
+
+    th, td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.7rem 1rem 0.7rem 0;
+        border-bottom: 1px solid var(--rule-soft);
+    }
+    th {
+        font-weight: 650;
+        font-size: 0.78rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+        border-bottom-color: var(--rule);
+    }
+    td:last-child, th:last-child { padding-right: 0; }
+
+    /* ── Contact ──────────────────────────────────────────────────────── */
+
+    .contact {
+        margin: 2.5rem 0 0;
+        padding: 1.5rem;
+        border: 1px solid var(--rule);
+        border-radius: 6px;
+    }
+    .contact p:last-child { margin-bottom: 0; }
+    .contact-name { font-weight: 650; }
+
+    footer {
+        margin-top: 3.5rem;
+        border-top: 1px solid var(--rule);
+        background: var(--wash);
+        padding: 1.75rem 0;
+        font-size: 0.85rem;
+        color: var(--ink-faint);
+    }
+    footer p { margin: 0; }
+
+    @media (max-width: 34rem) {
+        body { font-size: 16px; }
+        h1 { font-size: 1.6rem; }
+        header { padding: 2rem 0 1.75rem; }
+        main { padding: 2.25rem 0 1rem; }
+        h2 { margin-top: 2.4rem; }
+    }
+
+    @media print {
+        header, footer { background: none; }
+        body { font-size: 11pt; }
+        a { color: inherit; }
+        h2 { page-break-after: avoid; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <div class="brand">
+            <!-- The Farnese mark: the red ring segment and the monogram inside it. -->
+            <svg viewBox="272.15 313.69 53.14 53.14" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Farnese">
+                <path fill="#E1251B" d="M317,321.69 L311.56,322.72 A21.741,21.741 0 0 0 279.07,349.64 L276.93,354.61 A26.067,26.067 0 0 1 317,321.69 Z"/>
+                <path fill="#111111" d="M318.67,323.51 L290.36,328.25 L278.23,356.4 A26.067,26.067 0 0 0 287.46,363.75 L298.28,338.63 L319.78,335.03 A21.741,21.741 0 0 1 295.72,361.76 L302.91,345.06 L314.04,343.2 L313.45,338.6 L300,340.92 L289.75,364.71 A26.067,26.067 0 0 0 322.72,330.18 L295.39,334.75 L285.56,357.56 A21.741,21.741 0 0 1 283.49,355.79 L293.53,332.51 L321.59,327.81 A26.067,26.067 0 0 0 318.67,323.51 Z"/>
+            </svg>
+            <span class="brand-name">Farnese</span>
+        </div>
+
+        <h1>Privacy Policy — Farnese Service App</h1>
+        <p class="standfirst">How the Farnese Service App handles information, what it sends to our servers, and what it deliberately does not do.</p>
+
+        <p class="dateline">
+            <strong>Effective:</strong> 18 November 2026 &nbsp;·&nbsp;
+            <strong>Applies to:</strong> Farnese Service App for iOS and Android (<code>com.farnese.serviceapp</code>) &nbsp;·&nbsp;
+            <strong>Operated by:</strong> Farnese Australia Pty Ltd
+        </p>
+    </div>
+</header>
+
+<main>
+    <div class="wrap">
+
+        <h2>1. About this app and this policy</h2>
+
+        <p>The Farnese Service App is a working tool for Farnese field service technicians, operated by Farnese Australia Pty Ltd. Technicians use it to run service jobs, record labour and parts, look up stock, manage customer and machine records, record customer relationship activity, take job photographs, and capture a customer's signature when a job is completed.</p>
+
+        <p>The app is used by Farnese staff. It is not a consumer app. Accounts are issued by Farnese and cannot be created inside the app.</p>
+
+        <p>This policy describes what the app itself does. It is written from how the software actually behaves, not from everything an app of this kind might do.</p>
+
+        <div class="note">
+            <p><strong>The app contains no advertising, no analytics and no crash reporting. Nothing you do in it is tracked across other apps or websites.</strong> It reads your location only at the moment you clock in, clock out or check in to a job, and never in the background. It does not access your contacts, calendar, microphone, health data or advertising identifier. It does not build a profile of you, and it does not share information with data brokers.</p>
+        </div>
+
+        <h2>2. Information the app handles</h2>
+
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Information the app handles">
+            <table>
+                <caption>Every category of information the app records, why it exists, and where it ends up. Scroll sideways on a narrow screen.</caption>
+                <thead>
+                    <tr><th scope="col">Information</th><th scope="col">Why</th><th scope="col">Where it goes</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Email address and password</strong></td>
+                        <td>To sign you in.</td>
+                        <td>Sent to our server to authenticate you. <strong>Your password is never stored on the device.</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sign-in tokens</strong> issued by our server</td>
+                        <td>So you are not asked to sign in every time the app opens.</td>
+                        <td>Held in the device's secure credential store (the Android Keystore or the iOS Keychain).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>An app installation identifier</strong>, a random value the app generates the first time it runs</td>
+                        <td>To tie your sign-in session to this installation, so a stolen token cannot be reused from another device.</td>
+                        <td>Held in the secure credential store and sent with requests to our server. It is not derived from the hardware and is not shared with anyone else.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A push notification token</strong></td>
+                        <td>So our server can notify you about jobs and customer cases assigned to you.</td>
+                        <td>Issued by Google Firebase Cloud Messaging (and, on iOS, Apple Push Notification service) and registered with our server against your account.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Your staff profile</strong>: name, role, business unit, and the warehouse and work location you choose</td>
+                        <td>To show the jobs and stock relevant to you.</td>
+                        <td>Returned by our server and cached on the device.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Clock in and out times</strong>, and <strong>job check-in and check-out times</strong></td>
+                        <td>To record your working day and the time spent on each job.</td>
+                        <td>Sent to our server. The app also shows reminders and a "clocked in" notification from the phone itself.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Your precise location</strong>, taken once when you clock in, clock out, or check in to or out of a job</td>
+                        <td>To record where you were when the working day or job time started and ended.</td>
+                        <td>Sent to our server with that clock or check-in record. The app takes a single reading at the moment you tap. It does not track you between taps or read your location in the background.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Job records</strong>: job details, labour times, parts used, notes, checklist answers and comments</td>
+                        <td>This is the work itself.</td>
+                        <td>Sent to our server. Uploads waiting for a connection are held on the device until they are sent.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer and contact details</strong>: business names, contact names, phone numbers, email addresses and site addresses</td>
+                        <td>To find, create and update the customers and sites the work is for.</td>
+                        <td>Sent to our server.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Machine records</strong> and <strong>customer relationship activity</strong>: cases, activities, to-dos, comments and mentions of colleagues</td>
+                        <td>Business records about the equipment serviced and the customer relationship.</td>
+                        <td>Sent to our server.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Job photographs</strong>, taken with the camera or chosen from your photos</td>
+                        <td>To record the work done.</td>
+                        <td>Uploaded to our server. The app only receives the photos you pick in the system's photo picker; it cannot browse your photo library. You can save a job photo back to your photos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer signatures</strong> captured at job completion</td>
+                        <td>As the customer's acknowledgement that the job was completed.</td>
+                        <td>Uploaded to our server with the job.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Address search text</strong>, typed when entering a customer's address</td>
+                        <td>To suggest matching addresses.</td>
+                        <td>Sent to the Google Places service, which returns suggestions. Only the text you type into the address field is sent.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>People appearing in photographs</h3>
+
+        <p>Job photographs are taken on customer sites, so a photograph may happen to include people, vehicles or registration plates that were in frame. Those photographs are uploaded and kept in the same way as any other. Take the same care you would with any workplace photography.</p>
+
+        <h2>3. Device permissions</h2>
+
+        <ul>
+            <li><strong>Camera</strong>: to take job photographs.</li>
+            <li><strong>Location</strong> (only while you are using the app): to record where you are when you clock in or out, or check in to or out of a job. Clocking in and out needs it. The app never asks for background location.</li>
+            <li><strong>Notifications</strong>: to tell you about jobs and customer cases assigned to you, to remind you to clock in at 6:30am on weekdays and to clock out at 5pm, and to show that you are clocked in. You can decline this, and the app still works.</li>
+            <li><strong>Alarms and reminders</strong> (Android, optional): so the clock-in and clock-out reminders arrive at exactly the right time. If you don't allow it, the reminders still come, but Android may deliver them a little late.</li>
+            <li><strong>Photos and storage</strong>: on current versions of Android and iOS the app uses the system photo picker and needs no access to your photo library. On older Android versions (12 and earlier) it asks for storage access so it can attach and save job photographs.</li>
+            <li><strong>Background uploads</strong> (Android): photographs keep uploading if you switch away from the app, with a notification showing while they do.</li>
+            <li><strong>Internet</strong>: to reach our servers. Granted automatically; you are not asked.</li>
+        </ul>
+
+        <p>The app does <strong>not</strong> request access to your microphone, contacts or calendar, or to your location in the background.</p>
+
+        <h2>4. Where information is stored, and who can reach it</h2>
+
+        <p>Information is sent over encrypted HTTPS connections to the Farnese Inventory System, our business system, where it is stored. It can be reached by Farnese staff whose role gives them access to it, through this app and our other business software.</p>
+
+        <p>We do not sell information, and we do not disclose it to anyone else except where we are required to by law.</p>
+
+        <h3>Service providers and overseas disclosure</h3>
+
+        <ul>
+            <li><strong>DigitalOcean</strong> hosts our servers and their storage on our behalf, in its <strong>Sydney region, in Australia</strong>. DigitalOcean is headquartered in the United States, and its staff may reach those systems from outside Australia while operating them.</li>
+            <li><strong>Google</strong> delivers push notifications (Firebase Cloud Messaging) and provides address suggestions (Google Places).</li>
+            <li><strong>Apple</strong> delivers push notifications to iPhones.</li>
+        </ul>
+
+        <h3>Operational and security logs</h3>
+
+        <p>Our servers keep ordinary technical logs of requests, which may include your IP address, the time of the request and what was requested. They exist to keep the service secure and to investigate faults. They are not used for advertising or profiling.</p>
+
+        <h2>5. How long information is kept</h2>
+
+        <ul>
+            <li><strong>Business records</strong> (jobs, customers, machines, photographs, signatures, customer relationship activity): kept for as long as Farnese needs them as business records and as the law requires.</li>
+            <li><strong>Information on the device</strong>: until you sign out, clear the app's data or uninstall it.</li>
+            <li><strong>Sign-in tokens</strong>: they stop working at their expiry time, and signing out erases them from the device.</li>
+            <li><strong>Push notification token</strong>: removed from our server when you sign out.</li>
+        </ul>
+
+        <h2>6. Deleting your data and your account</h2>
+
+        <p><strong>Your account.</strong> To have your account closed and the personal information held about you deleted, write to <a href="mailto:it@farnese.com.au">it@farnese.com.au</a> from the address on the account. We will acknowledge the request within 5 business days and act on it within 30 days, or explain why we cannot.</p>
+
+        <p><strong>Business records.</strong> Jobs, customer records, photographs and signatures are Farnese's business records, not personal records of the technician who entered them. Closing your account does not delete them.</p>
+
+        <h2>7. Security</h2>
+
+        <ul>
+            <li>All communication with our servers uses encrypted HTTPS connections.</li>
+            <li>Your password is sent to sign you in and is never written to the device.</li>
+            <li>Sign-in tokens are held in the platform's protected credential store, not in ordinary app storage.</li>
+        </ul>
+
+        <p>No system is perfectly secure. A phone that is unlocked, shared or compromised may expose whatever is on it, so treat it as you would any other work equipment.</p>
+
+        <h2>8. Your rights, and complaints</h2>
+
+        <p>Farnese Australia Pty Ltd handles personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles. You can ask us for access to the personal information we hold about you, or ask us to correct or delete it, by writing to the address in section 11.</p>
+
+        <p><strong>If you believe we have mishandled your privacy</strong>, write to us at <a href="mailto:it@farnese.com.au">it@farnese.com.au</a> and tell us what happened. We will acknowledge your complaint within 5 business days and give you a written response within 30 days. If you are not satisfied with our response, you can take the matter to the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au">oaic.gov.au</a> or on 1300 363 992.</p>
+
+        <h2>9. Children</h2>
+
+        <p>The app is a workplace tool for Farnese staff. It is not directed at children, and we do not knowingly collect information from anyone under 16.</p>
+
+        <h2>10. Changes to this policy</h2>
+
+        <p>If we change how the app handles information, we will update this page and change the effective date at the top.</p>
+
+        <h2>11. Contact</h2>
+
+        <div class="contact">
+            <p class="contact-name">Farnese Australia Pty Ltd</p>
+            <p>Privacy enquiries, access and correction requests, complaints, and account deletion requests:<br>
+            <a href="mailto:it@farnese.com.au">it@farnese.com.au</a></p>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <p>© 2026 Farnese Australia Pty Ltd. Privacy policy for the Farnese Service App.</p>
+    </div>
+</footer>
+
+</body>
+</html>
